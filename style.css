@@ -90,28 +90,40 @@ td{
     text-align: center;
 }
 
-.accordion {
-    background-color: #f3cfe3;
-    color: #444;
-    cursor: pointer;
-    padding: 18px;
-    width: 100%;
-    text-align: left;
-    border: none;
-    outline: none;
-    transition: 0.4s;
-  }
-  
-  .active, .accordion:hover {
-    background-color: rgb(112, 94, 94);
-  }
-  
-  .panel {
-    padding: 0 18px;
-    background-color: white;
+input {
     display: none;
-    overflow: hidden;
-  }
+}
+
+label {
+    display: block;    
+    padding: 8px 22px;
+    margin: 0 0 1px 0;
+    cursor: pointer;
+    background: #f3cfe3;
+    border-radius: 3px;
+    color: rgb(7, 7, 7);
+    transition: ease .5s;
+}
+
+label:hover {
+    background: #6b0239;
+}
+
+.content {
+    background: #E2E5F6;
+    padding: 10px 25px;
+    border: 1px solid #A7A7A7;
+    margin: 0 0 1px 0;
+    border-radius: 3px;
+}
+
+input + label + .content {
+    display: none;
+}
+
+input:checked + label + .content {
+    display: block;
+}
 
   .footer{
       text-align: center;
