@@ -1,0 +1,126 @@
+body{
+    background-color: #E5E5E5;
+    font-family: 'Playfair Display', serif ;
+    
+}
+.intro-text{
+    background-image: url("https://www.paho.org/sites/default/files/styles/max_650x650/public/2021-01/covid-19-dna-1500x765.jpg?itok=Dt7V3vMp");
+    background-color: #cccccc;
+    height: 250px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity : 0.8;
+}
+
+.intro-text{
+    text-align: center;
+    color: rgb(243, 243, 141);
+    opacity: 50;
+    position: relative;
+}
+
+.headings{
+    text-align: center;
+    background-color: #4C0027;
+    border-radius: 2mm;
+    color: wheat;
+}
+
+.img1{
+    float:right;
+    margin: 20px;
+    width: 200px;
+    border-radius: 5mm;
+    height: 100px;
+    opacity: 2;
+}
+
+
+.img2{
+    float:left;
+    margin: 20px;
+    width: 200px;
+    border-radius: 5mm;
+    height: 100px;
+    opacity: 2;
+}
+
+.txt1{
+    float:left;
+    margin: 20px;
+}
+
+.txt2{
+    float:right;
+    margin: 20px;
+}
+
+
+
+.tips{
+    height: 100px;
+    background-color: #cccccc;
+    background-image: radial-gradient( #f1e2eb, #f3b078);
+    align-items: center;
+    border-style: dashed;
+    border-width: medium;
+    border-color: rgb(12, 12, 12);
+    border-radius: 20px;
+    padding: 5vh;
+    
+}
+
+table, th, td{
+    border: 1px solid black;
+    border-radius: 2mm;
+    background-color: rgb(12, 11, 12);
+    margin-left: 150px;
+}
+
+th{
+    background-color: #6b0239;
+    color: whitesmoke;
+    margin: 10px;
+}
+
+td{
+    background-color: #f3cfe3;
+    margin: 3px;
+    text-align: center;
+}
+
+.accordion {
+    background-color: #f3cfe3;
+    color: #444;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: 0.4s;
+  }
+  
+  .active, .accordion:hover {
+    background-color: rgb(112, 94, 94);
+  }
+  
+  .panel {
+    padding: 0 18px;
+    background-color: white;
+    display: none;
+    overflow: hidden;
+  }
+
+  .footer{
+      text-align: center;
+      background-color: black;
+      color: white;
+  }
+
+  .contact{
+      color: blanchedalmond;
+  }
+
+  

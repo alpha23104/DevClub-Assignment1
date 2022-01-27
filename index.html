@@ -1,10 +1,121 @@
 <html>
-	<head>
-		<title>
-			Hello World
-		</title>
-	</head>
-	<body>
-		Write your code for the submission by editing this file
-	</body>
+    <br>
+    <head>
+        <title>Covid-19 Guide</title>
+        <link href="style.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:ital,wght@1,300&family=Playfair+Display:wght@600&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <header>
+        <nav id="navbar" style="position: fixed;">
+            <button><a href="#home">Home</a></button>
+            <button><a href="#tips">Tips</a></button>
+            <button><a href="#symptoms">Symptoms</a></button>
+            <button><a href="#faqs">FAQs</a></button>
+            <button><a href="#youtube">YouTube</a></button>
+        </nav>
+        </header>
+        
+        <section class="intro-text" id="home" name="home">
+        <h1 style="font-size: xx-large;">Confused about where to get the right information about Covid-19?</h1>
+        <br><br>
+        <h1 style="font-size: xx-large;"> Don't worry, we got you!</h1>
+        </section>
+        
+        <a name="tips"></a>
+        <h2 class="headings" style="font-size: xx-large;">Tips and Advices <br></h2> 
+        <h3 style="text-align: center;">Secure Yourself to Secure Your Community and Secure the World!</h3>
+        <div class="tips" id="tip1" >
+            <img class="img1" src="mask.png" alt="Right way to put on a mask">
+            <h3 class="txt1">Wear a Mask!<br> And Wear it <br> the Right Way!</h3>
+        </div><br>
+        <div class="tips" id="tip2">
+            <img class="img2" src="handwash.png">
+            <h3 class="txt2">Wash Your Hands<br> Regularly<br> And Thoroughly!</h3>
+        </div><br><br>
+
+        <a name="symptoms"></a>
+        <h2 class="headings" style="font-size: xx-large;"> Symptoms </h2>
+        <table class="table">
+            <tr>
+                <th style="width: 100px;">Symptom</th>
+                <th style="width: 100px;">Severity</th>
+                <th style="width: 215px;">Advice</th>
+            </tr>
+            <tr>
+                <td>Fever</td>
+                <td>Mild</td>
+                <td>Drink plenty of fluids,particularly water.</td>
+            </tr>
+            <tr>
+                <td>Cold</td>
+                <td>Mild</td>
+                <td>Drink plenty of fluids,particularly water.</td>
+            </tr>
+            <tr>
+                <td>Cough</td>
+                <td>Mild</td>
+                <td>Drink plenty of fluids,particularly water.</td>
+            </tr>
+            <tr>
+                <td>Tiredness</td>
+                <td>Mild</td>
+                <td>Drink plenty of fluids,particularly water.</td>
+            </tr>
+        </table>
+        <br>
+        <br>
+
+        <a name="faqs"></a>
+        
+        <h2 class="headings" style="font-size: xx-large;">Frequently Asked Questions</h2>
+        <button class="accordion">What is COVID-19?</button>
+        <div class="panel">
+            <p>COVID-19 is a disease caused by a virus called SARS-CoV-2. Most people with COVID-19 have mild symptoms, but some people can become severely ill. Although most people with COVID-19 get better within weeks of illness, some people experience post-COVID conditions. Post-COVID conditions are a wide range of new, returning, or ongoing health problems people can experience more than four weeks after first being infected with the virus that causes COVID-19. Older people and those who have certain underlying medical conditions are more likely to get severely ill from COVID-19. Vaccines against COVID-19 are safe and effective.</p>
+        </div>
+        <button class="accordion">Should I use soap and water or hand sanitiser to protect myself?</button>
+        <div class="panel">
+            <p>Handwashing is one of the best ways to protect yourself and your family from getting sick. Wash your hands often with soap and water for at least 20 seconds, especially after blowing your nose, coughing, or sneezing; going to the bathroom; and before eating or preparing food. If soap and water are not readily available, use an alcohol-based hand sanitizer with at least 60% alcohol.</p>
+        </div>
+        <button class="accordion">What are the symptoms and complications that COVID-19 can cause?</button>
+        <div class="panel">
+            <p>People with COVID-19 have reported a wide range of symptoms – from mild symptoms to severe illness. Symptoms may appear 2-14 days after exposure to the virus. If you have fever, cough, or other symptoms, you might have COVID-19.</p>
+        </div>
+
+        <script>
+            var acc = document.getElementsByClassName("accordion");
+            var i;
+
+            for (i = 0; i < acc.length; i++) {
+                acc[i].addEventListener("click", function() {
+    
+                    this.classList.toggle("active");
+
+                    var panel = this.nextElementSibling;
+                    if (panel.style.display === "block") {
+                        panel.style.display = "none";
+                    } else {
+                        panel.style.display = "block";
+                    }
+                });
+            }
+        </script>
+        <br>
+        <br>
+
+
+        <a name="youtube"></a>
+        <h2 class="headings" style="font-size: xx-large;">YouTube References</h2>
+        <iframe style="margin-left: 80px;" width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL9S6xGsoqIBU2V6AZYGlJwZRAFJ3YDreb" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <br><br>
+    </body>
+    
+
+    <footer class="footer">
+        <p>Made by Rakshitha</p>
+        <a class="contact" href="mailto:rakshitha232004@gmail.com">rakshitha232004@gmail.com</a><br>
+        <a class="contact" href="https://github.com/alpha23104">github.com/alpha23104</a>
+    </footer>
 </html>
